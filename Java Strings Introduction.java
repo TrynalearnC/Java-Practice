@@ -1,3 +1,4 @@
+/*
 Given two strings of lowercase English letters, AA and BB, perform the following operations:
 
 Sum the lengths of AA and BB.
@@ -28,13 +29,13 @@ Explanation
 String AA is "hello" and BB is "java". 
 AA has a length of 55, and BB has a length of 44; the sum of their lengths is 99. 
 When sorted alphabetically/lexicographically, "hello" comes before "java"; therefore, AA is not larger than BB and the answer is NO. 
-When you capitalize the first letter of both AA and BB and then print them separated by a space, you get "Hello Java"
+When you capitalize the first letter of both AA and BB and then print them separated by a space, you get "Hello Java"  */
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-My Code:
+// My Code:
 
 import java.io.*;
 import java.util.*;
@@ -57,10 +58,8 @@ public class Solution {
         }
         else {
             System.out.println("Yes");
-        }
-        
-        // Yeh tareeka galat hai, ismei I am specifically 'sub-stringin' for the          sample input provided
-        
+        }    
+          
         String A1 = A.substring(0,1).toUpperCase();
         String A2 = A.substring(1);
         System.out.print(A1 + A2 + " ");
@@ -68,8 +67,7 @@ public class Solution {
         String B1 = B.substring(0,1).toUpperCase();
         String B2 = B.substring(1);
         System.out.print(B1 + B2);
-      
-        
+              
         //System.out.println(A.toUpperCase() + " " + B.toUpperCase());
         
     }
